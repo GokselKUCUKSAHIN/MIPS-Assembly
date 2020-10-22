@@ -1,0 +1,6 @@
+BNE $S3, $S4, ELSE
+ADD $S0, $S1, $S2
+J EXIT
+ELSE:
+  SUB $S0, $S1, $S2
+EXIT:
