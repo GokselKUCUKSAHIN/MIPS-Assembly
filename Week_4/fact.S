@@ -4,7 +4,7 @@ fact:
   sw   $a0, 0($sp)     # save the argument n 
 
   slti $t0, $a0, 1     # test for n < 1
-  beq	 $t0, $zero, L1	# if $t0 == zero L1
+  beq  $t0, $zero, L1	# if $t0 == zero L1
 
   addi $v0, $zero, 1   # return 1
   addi $sp, $sp, 8     # pop 2 items off stack
