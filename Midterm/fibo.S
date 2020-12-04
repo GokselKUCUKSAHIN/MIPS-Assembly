@@ -15,7 +15,7 @@ fibo:
  # return fibo(n - 1) + fibo(n - 2);
  addi $a0, $a0, -1 # $a0 = $a0 - 1
  jal fibo # fibo(n - 1);
- addi $s0, $zero, $v0# $s0 holds result of fibo(n - 1)
+ add $s0, $zero, $v0# $s0 holds result of fibo(n - 1)
  addi $a0, $a0, -1 # $a0 = $a0 - 1. $a0 holds already ($a0 - 1)
  jal fibo # fibo(n - 2);
  add $v0, $v0, $s0 # fibo(n - 1) + fibo(n - 2)
